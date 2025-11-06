@@ -16,7 +16,7 @@ test('test', async ({ page }) => {
   await expect(page.locator('#userForm')).toMatchAriaSnapshot(`
     - paragraph: Name:Arturo
     - paragraph: Email:arturo@hotmail.com
-    - paragraph: /Current Address :\\d+/
-    - paragraph: /Permananet Address :\\d+/
+    - paragraph: Current Address :123
+    - paragraph: Permananet Address :123
     `);
 });
